@@ -10,8 +10,12 @@ title-bold: Forty
 title-normal: by HTML5 UP
 email: youremailaddress@gmail.com
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://cserron.github.io/proyecto-renacer.github.io/" # the base hostname & protocol for your site
+
+baseurl: "/proyecto-renacer" # Github repo name
+                             # the subpath of your site, e.g. /blog
+
+url: "https://builtbybros.github.io" # Github url including organization and protocol (https)
+                                     # the base hostname & protocol for your site
 author: 
 street_address: 1234 Somewhere Road
 city: Nashville
@@ -19,6 +23,9 @@ state: TN
 zip_code: 55555
 country: United States of America
 phone: (716) 555-5555
+
+#Page folder configuration
+include: ['_pages']
 
 # Plugins
 gems:
@@ -45,6 +52,8 @@ twitter_url: https://twitter.com/andrewbanchich
 
 # Build settings
 markdown: kramdown
+sass:
+  style: :compressed
 
 # Plugin: jekyll-seo-tag
 twitter:
