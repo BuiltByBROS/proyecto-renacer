@@ -3,7 +3,10 @@
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ site.url }}{{ site.baseurl }}" class="logo"><strong>{{ site.title-bold }}</strong> <span>{{ site.title-normal }}</span></a>
+
+	<a href="{{ site.baseurl }}/" style="border: 0 none;">
+		<img src="{{ site.baseurl }}/assets/images/renacer_DEF.gif" >
+	</a>
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>
@@ -24,7 +27,6 @@
 		{% endfor %}
 	</ul>
 	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
+		<li><a href="#" class="button special fit">Comenzar!</a></li>
 	</ul>
 </nav>

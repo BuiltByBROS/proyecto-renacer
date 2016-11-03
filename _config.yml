@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title-bold: Forty
-title-normal: by HTML5 UP
+title-bold: Proyecto Renacer
+title-normal: por Bros
 email: youremailaddress@gmail.com
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
 
@@ -16,13 +16,13 @@ baseurl: "/proyecto-renacer" # Github repo name
 
 url: "https://builtbybros.github.io" # Github url including organization and protocol (https)
                                      # the base hostname & protocol for your site
-author: 
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+author: BROS
+street_address: Dr. Anaclero Dufort y Álvarez
+city: Montevideo
+state: Montevideo
+zip_code: 11700
+country: Uruguay
+phone: (+598) 2 336 89 70
 
 #Page folder configuration
 include: ['_pages']
@@ -35,7 +35,7 @@ gems:
   - jemoji
 
 # Homepage tiles
-tiles-source: posts # accepts "posts" or "pages" 
+tiles-source: pages # accepts "posts" or "pages"
 tiles-count: 6
 
 # Social settings
