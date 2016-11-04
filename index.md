@@ -12,7 +12,8 @@ nav-menu:
 <section id="banner" class="major">
 	<div class="inner">
 		<header class="major">
-			<h1>{{ page.landing-title }}</h1>
+			<!-- <h1>{{ page.landing-title }}</h1> -->
+			<img class="image-responsive" src="{{ site.baseurl }}/assets/images/renacer_DEF.png" >
 		</header>
 		<div class="content">
 			<p style="text-transform: uppercase;">{{ page.description }}</p>
@@ -24,7 +25,12 @@ nav-menu:
                         <div class="lightbox-content">
                             <button onclick="hideVideo('video','youtube')" class="lightbox-close">Close | ✕</button>
                             <div class="video-container">
-                                <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/7XPkPl6cvk0?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                <object width="640" height="360" id="youtube">
+                                    <param name="movie" value="//www.youtube.com/embed/yt-video-id?html5=1&amp;rel=0&amp;hl=en_US&amp;version=3"/
+                                    <param name="allowFullScreen" value="true"/>
+                                    <param name="allowscriptaccess" value="always"/>
+                                    <embed width="640" height="360" src="//www.youtube.com/embed/7XPkPl6cvk0?html5=1&amp;rel=0&amp;hl=en_US&amp;version=3" class="youtube-player" type="text/html" allowscriptaccess="always" allowfullscreen="true"/>
+                                </object>
                             </div>                            
                         </div>
                 </div>

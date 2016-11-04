@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://localhost:4000/proyecto-renacer/" />
 <meta property="og:image" content="http://localhost:4000/proyecto-renacerassets/images/23.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@andrewbanchich" />
+<meta name="twitter:site" content="@builtbybros" />
 <meta name="twitter:creator" content="@BROS" />
 <script type="application/ld+json">
   {
@@ -47,9 +47,7 @@
 <!-- Header -->
 <header id="header" class="alt">
 
-	<a href="/proyecto-renacer/" style="border: 0 none;">
-		<img src="/proyecto-renacer/assets/images/renacer_DEF.gif" >
-	</a>
+	<a href="http://localhost:4000/proyecto-renacer" class="logo"><strong>Proyecto Renacer</strong> </a>
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>
@@ -116,7 +114,8 @@
 <section id="banner" class="major">
 	<div class="inner">
 		<header class="major">
-			<h1>Proyecto Renacer</h1>
+			<!-- <h1>Proyecto Renacer</h1> -->
+			<img class="image-responsive" src="/proyecto-renacer/assets/images/renacer_DEF.png" />
 		</header>
 		<div class="content">
 			<p style="text-transform: uppercase;">Somos un centro dedicado al tratamiento de personas que sufren adicciones,<br /> el cual promueve cambios significativos en sus vidas.</p>
@@ -128,7 +127,12 @@
                         <div class="lightbox-content">
                             <button onclick="hideVideo('video','youtube')" class="lightbox-close">Close | ✕</button>
                             <div class="video-container">
-                                <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/7XPkPl6cvk0?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                                <object width="640" height="360" id="youtube">
+                                    &lt;param name="movie" value="//www.youtube.com/embed/yt-video-id?html5=1&amp;rel=0&amp;hl=en_US&amp;version=3"/
+                                    <param name="allowFullScreen" value="true" />
+                                    <param name="allowscriptaccess" value="always" />
+                                    <embed width="640" height="360" src="//www.youtube.com/embed/7XPkPl6cvk0?html5=1&amp;rel=0&amp;hl=en_US&amp;version=3" class="youtube-player" type="text/html" allowscriptaccess="always" allowfullscreen="true" />
+                                </object>
                             </div>                            
                         </div>
                 </div>
@@ -205,7 +209,7 @@
 <section id="contact">
 	<div class="inner">
 		<section>
-			<form action="https://formspree.io/youremailaddress@gmail.com" method="POST">
+			<form action="https://formspree.io/proyectorenacer@proyectorenacer.org" method="POST">
 				<div class="field half first">
 					<label for="name">Nombre</label>
 					<input type="text" name="name" id="name" />
@@ -229,7 +233,7 @@
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
 					<h3>Email</h3>
-					<a href="#">youremailaddress@gmail.com</a>
+					<a href="#">proyectorenacer@proyectorenacer.org</a>
 				</div>
 			</section>
 			<section>

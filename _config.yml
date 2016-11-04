@@ -8,7 +8,7 @@
 # Site settings
 title-bold: Proyecto Renacer
 title-normal: por Bros
-email: youremailaddress@gmail.com
+email: proyectorenacer@proyectorenacer.org
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
 
 baseurl: "/proyecto-renacer" # Github repo name
@@ -50,7 +50,7 @@ sass:
 
 # Plugin: jekyll-seo-tag
 twitter:
-  username: andrewbanchich
+  username: builtbybros
 # Add one or more of the following
 facebook:
   app_id: 
