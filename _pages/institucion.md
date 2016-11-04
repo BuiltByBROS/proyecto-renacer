@@ -18,8 +18,8 @@ Nuestra filosofía de trabajo se define alrededor de dos palabras: Amor Exigente
 Este Amor Exigente y comprometido implica:
 
 
-- Pautas firmes y claras en el vínculo familiar.
-= Una actitud responsable en la propia vida.
+- #### Pautas firmes y claras en el vínculo familiar.
+- #### Una actitud responsable en la propia vida.
 
 
 Se trata de una iniciativa vinculada a la  Iglesia Católica que apunta a la salud de la sociedad uruguaya sin importar credo religioso, posición política y/o condición social.

@@ -11,10 +11,11 @@ image: assets/images/19.jpg
 La adicción es una enfermedad que daña a la persona, a la familia y a la sociedad, es por eso que Proyecto Renacer, desde sus inicios, realiza un abordaje sistémico, llevado adelante por un **equipo multidisciplinario basado en cuatro áreas:**
 
 
-- ###### Educativa
-- ###### Psiquiátrica
-- ###### Espiritual
-- ###### Terapéutica
+>> - #### Educativa
+>> - #### Psiquiátrica
+>> - #### Espiritual
+>> - #### Terapéutica
+
 
 
 Proyecto Renacer tiene como centro de atención a la persona, a la familia (cualquiera sea su conformación, en el entendido que es fundamental en su evolución) y a sus vínculos afectivos de manera integral.
