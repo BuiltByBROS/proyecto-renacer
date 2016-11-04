@@ -4,7 +4,7 @@ title: Preguntas Frecuentas
 permalink: /preguntas-frecuentes/
 order: 4
 description: ¿Cómo es el sistema? | ¿Y recurren ellos o las familias?
-image: assets/images/34.jpg
+image: assets/images/35.JPG
 ---
 
 ### ¿Cómo es el sistema?
