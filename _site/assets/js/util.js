@@ -13,6 +13,94 @@ function hideVideo(div,video_id) {
 	document.getElementById(div).style.display = 'none';
 }
 
+//////////////////////
+// Login validation///
+//////////////////////
+
+function Violator(){
+	/* VIOLATOR BASIC CLASSES */
+	this.error_msg_class =".error_msg";
+	this.error_invalid = ".invalid";
+
+}
+Violator.prototype = {
+	constructor: Violator,
+
+	detect_features:function(check_input){
+		var input_to_detect = check_input;
+		if (!input_to_detect.prop('validity')){
+			input_to_detect.prop("validity", { "valid": false });
+		}
+	},
+
+	display_errors:function(obj, error_obj){
+		var t = obj;
+		var error = this.error_msg_class.concat(error_obj);
+		var open_already = t.parent().find(error).css("display");
+		//console.log(open_already);
+		if(open_already != "none"){
+			t.parent().find('.error_msg').slideUp(function(){
+				t.parent().find(error).slideDown();
+			});
+
+		}else{
+			t.parent().find(error).slideDown();
+		}
+	},
+
+	hide_errors:function(obj, error_obj){
+		var t = obj;
+		var error = this.error_msg_class.concat(error_obj);
+		t.parent().find(error).slideUp();
+	}
+};
+
+
+
+function Comparison_Validator(first_in_box){
+	this.first_input_box = first_in_box;
+	var violator_ins = new Violator();
+	violator = violator_ins;
+	violator.hide_errors( $(first_in_box), violator.error_invalid );
+	violator.detect_features($(first_in_box)),
+		this.addListeners();
+}
+Comparison_Validator.prototype = {
+
+	constructor: Comparison_Validator,
+
+	addListeners: function(){
+		var input_obj = this.first_input_box;
+		var cp = this;
+		$(input_obj).on('blur', function(){
+			var t = cp.check_if_valid( $(input_obj) );
+			if(t){
+				violator.first_input_verified = true;
+			}else{
+				violator.first_input_verified = false;
+			}
+		});
+	},
+
+	check_if_valid: function(obj){
+		var input = obj;
+		var input_value = input.val();
+		var input_valid = input.prop('validity').valid;
+		if(!input_valid  && input_value !== ""){
+			violator.display_errors(input, violator.error_invalid);
+			return false;
+		}else{
+			violator.hide_errors( input, violator.error_invalid );
+			return true;
+		}
+	},
+};
+
+//////////////////////////
+// End Login Validation //
+//////////////////////////
+
+
 (function($) {
 
 	/**
@@ -198,7 +286,7 @@ function hideVideo(div,video_id) {
 					$this.touchPosX = event.originalEvent.touches[0].pageX;
 					$this.touchPosY = event.originalEvent.touches[0].pageY;
 
-				})
+				});
 
 				$this.on('touchmove', function(event) {
 

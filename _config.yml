@@ -8,7 +8,8 @@
 # Site settings
 title-bold: Proyecto Renacer
 title-normal: por Bros
-email: proyectorenacer@proyectorenacer.org
+email: anacesponda@gmail.com
+email-token: 45941f42152fc6db6d4ffe515e0c8f13
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
 
 baseurl: "/proyecto-renacer" # Github repo name

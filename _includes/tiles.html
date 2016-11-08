@@ -1,7 +1,7 @@
 <section id="one" class="tiles">
     {% assign sorted_pages = site.pages | sort:"order"%}
     {% for pages in sorted_pages offset:4 %}
-	{% if site.tiles-source == 'pages'  and pages.title != 'Inicio'%}
+	{% if site.tiles-source == 'pages'  and pages.title != 'Inicio' and pages.title != 'Muchas Gracias!'%}
         <article>
                 <span class="image">
                         <img src="{{ pages.image }}" alt="" />
