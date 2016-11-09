@@ -83,10 +83,10 @@ Comparison_Validator.prototype = {
 	},
 
 	check_if_valid: function(obj){
-		var input = obj;
+		var input = $(obj);
 		var input_value = input.val();
 		var input_valid = input.prop('validity').valid;
-		if(!input_valid  && input_value !== ""){
+		if(!input_valid  || input_value.length === 0){
 			violator.display_errors(input, violator.error_invalid);
 			return false;
 		}else{
@@ -95,6 +95,8 @@ Comparison_Validator.prototype = {
 		}
 	},
 };
+
+
 
 //////////////////////////
 // End Login Validation //

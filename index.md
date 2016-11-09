@@ -8,22 +8,12 @@ author:
 nav-menu: 
 ---
 
-<!-- Banner -->
-<section id="banner" class="major">
-	<div class="inner">
-		<header class="major">
-			<!-- <h1>{{ page.landing-title }}</h1> -->
-			<img class="image-responsive" src="{{ site.baseurl }}/assets/images/renacer_DEF.png" >
-		</header>
-		<div class="content">
-			<p style="text-transform: uppercase;">{{ page.description }}</p>
-			<ul class="actions">
-				<li><a class="button next scrolly" onclick="revealVideo('video','youtube')">Quiero saber más</a></li>
-			</ul>
-            <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+ 
+		
+   <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
                 <div class="lightbox-container">
                         <div class="lightbox-content">
-                            <button onclick="hideVideo('video','youtube')" class="lightbox-close">Close | ✕</button>
+                            <button onclick="hideVideo('video','youtube')" class="lightbox-close">Cerrar</button>
                             <div class="video-container">
                                 <object width="640" height="360" id="youtube">
                                     <param name="movie" value="//www.youtube.com/embed/yt-video-id?html5=1&amp;rel=0&amp;hl=en_US&amp;version=3"/
@@ -35,7 +25,21 @@ nav-menu:
                         </div>
                 </div>
             </div>
-			
+
+<!-- Banner -->
+<section id="banner" class="major">
+	<div class="inner">
+		<header class="major">
+			<!-- <h1>{{ page.landing-title }}</h1> -->
+			<img class="image-responsive" src="{{ site.baseurl }}/assets/images/renacer_DEF.png" >
+		</header>
+		
+		<div class="content">
+			<p style="text-transform: uppercase;">{{ page.description }}</p>
+			<ul class="actions">
+				<li><a class="button next scrolly" onclick="revealVideo('video','youtube')">Quiero saber más</a></li>
+			</ul>
+        	
 		</div>
 	</div>
 

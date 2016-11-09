@@ -3,7 +3,7 @@
 	<div class="inner">
 		<section>
 
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
+			<form onsubmit="return validateForm()"  action="https://formspree.io/{{ site.email }}"  name="contact-form" method="POST" >
 				<input type="hidden" name="_next" value='{{ site.url }}{{ site.baseurl }}/thanks/'/>
 				<div class="field half first">
 					<label for="name">Nombre</label>
@@ -11,7 +11,7 @@
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email"  title="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" value="" required/>
+					<input type="text" name="_replyto" id="email"  title="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" value="" required />
 					<p class="error_msg invalid">Por favor ingresa un e-mail válido.</p>
 				</div>
 				<div class="field">
@@ -107,4 +107,12 @@
 	<script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
 	<script>
 		var m = new Comparison_Validator("input#email");
+
+		function validateForm() {
+			var comparison_ins = new Comparison_Validator("input#email");
+			if (! comparison_ins.check_if_valid("input#email")) {
+				return false;
+			}
+		};
+
 	</script>

@@ -116,22 +116,10 @@
 	<ul class="actions vertical">
 		<li><a href="#" class="button special fit">Comenzar!</a></li>
 	</ul>
-</nav> <!-- Banner -->
-<section id="banner" class="major">
-	<div class="inner">
-		<header class="major">
-			<!-- <h1>Proyecto Renacer</h1> -->
-			<img class="image-responsive" src="/proyecto-renacer/assets/images/renacer_DEF.png" />
-		</header>
-		<div class="content">
-			<p style="text-transform: uppercase;">Somos un centro dedicado al tratamiento de personas que sufren adicciones,<br /> el cual promueve cambios significativos en sus vidas.</p>
-			<ul class="actions">
-				<li><a class="button next scrolly" onclick="revealVideo('video','youtube')">Quiero saber más</a></li>
-			</ul>
-            <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+</nav> <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
                 <div class="lightbox-container">
                         <div class="lightbox-content">
-                            <button onclick="hideVideo('video','youtube')" class="lightbox-close">Close | ✕</button>
+                            <button onclick="hideVideo('video','youtube')" class="lightbox-close">Cerrar</button>
                             <div class="video-container">
                                 <object width="640" height="360" id="youtube">
                                     &lt;param name="movie" value="//www.youtube.com/embed/yt-video-id?html5=1&amp;rel=0&amp;hl=en_US&amp;version=3"/
@@ -143,7 +131,21 @@
                         </div>
                 </div>
             </div>
-			
+
+<!-- Banner -->
+<section id="banner" class="major">
+	<div class="inner">
+		<header class="major">
+			<!-- <h1>Proyecto Renacer</h1> -->
+			<img class="image-responsive" src="/proyecto-renacer/assets/images/renacer_DEF.png" />
+		</header>
+		
+		<div class="content">
+			<p style="text-transform: uppercase;">Somos un centro dedicado al tratamiento de personas que sufren adicciones,<br /> el cual promueve cambios significativos en sus vidas.</p>
+			<ul class="actions">
+				<li><a class="button next scrolly" onclick="revealVideo('video','youtube')">Quiero saber más</a></li>
+			</ul>
+        	
 		</div>
 	</div>
 
@@ -218,7 +220,7 @@
 	<div class="inner">
 		<section>
 
-			<form action="https://formspree.io/anacesponda@gmail.com" method="POST">
+			<form onsubmit="return validateForm()"  action="https://formspree.io/anacesponda@gmail.com"  name="contact-form" method="POST" >
 				<input type="hidden" name="_next" value='http://localhost:4000/proyecto-renacer/thanks/'/>
 				<div class="field half first">
 					<label for="name">Nombre</label>
@@ -226,7 +228,7 @@
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email"  title="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" value="" required/>
+					<input type="text" name="_replyto" id="email"  title="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" value="" required />
 					<p class="error_msg invalid">Por favor ingresa un e-mail válido.</p>
 				</div>
 				<div class="field">
@@ -306,6 +308,14 @@
 	<script src="http://localhost:4000/proyecto-renacer/assets/js/main.js"></script>
 	<script>
 		var m = new Comparison_Validator("input#email");
+
+		function validateForm() {
+			var comparison_ins = new Comparison_Validator("input#email");
+			if (! comparison_ins.check_if_valid("input#email")) {
+				return false;
+			}
+		};
+
 	</script>
 
 
